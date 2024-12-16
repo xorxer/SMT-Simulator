@@ -1,20 +1,24 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "src/server.ts",
+  "main": "src/server.js",
   "scripts": {
     "start": "nodemon --exec ts-node src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "commonjs",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/ws": "^8.5.13",
     "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "pg": "^8.13.1",
-    "socket.io": "^4.8.1"
+    "ws": "^8.18.0",
+    "wscat": "^6.0.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
